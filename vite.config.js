@@ -6,7 +6,5 @@ const basePath = '/fdoble-website/';
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [vue()],
-  build: {
-    base: basePath,
-  }
+    base: basePath
 })
