@@ -1,12 +1,12 @@
 <template>
-  <div class="bg-black text-white min-h-screen flex flex-col items-center justify-center">
+  <section class="container mx-auto bg-black text-white min-h-screen flex flex-col items-center justify-center">
     <!-- Top: Large Text with Animation -->
-    <h1 class="text-2xl md:text-4xl lg:text-[100px] font-extrabold text-center m-4 p-8 falling-text">
+    <h1 class="text-2xl md:text-4xl lg:text-[100px] font-extrabold text-center m-4 p-8">
       FRANCIS DOBLE
     </h1>
 
     <!-- Bottom: Editable Introduction with Animation -->
-    <div class="w-full md:w-1/2 p-4 falling-text">
+    <div class="w-full md:w-1/2 p-4">
       <div class="bg-blue-500 p-6 rounded-lg">
         <!-- Placeholder for your introduction -->
         <div class="p-2 rounded-md bg-gray-100 text-gray-800 text-justify">
@@ -14,7 +14,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>
