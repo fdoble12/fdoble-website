@@ -27,7 +27,7 @@ export default {
     return {
       experiences: [
         {
-          image: '/bp.jpg',
+          image: 'bp.jpg',
           title: 'Batch President',
           description: 'In my second year of college, I was elected as the Batch President of Computer Batch 2024. During my stint, I was able to oversee 7 committees with 50 officers, and delivered over 8 projects for approximately 300 students of the batch. The experiences I had during my term helped me develop my leadership and organizational skills.',
         },
