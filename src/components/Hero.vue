@@ -1,6 +1,5 @@
 <template>
-  <section class="container mx-auto bg-black text-white min-h-screen flex flex-col items-center justify-center" >
-    <!-- Top: Large Text with Animation -->
+<section class="container mx-auto bg-black text-white min-h-screen flex flex-col items-center justify-center" >    <!-- Top: Large Text with Animation -->
     <h1 class="text-2xl md:text-4xl lg:text-[90px] font-extrabold text-center m-4 p-8">
       FRANCIS DOBLE
     </h1>
