@@ -4,13 +4,14 @@ import Hero from './components/Hero.vue';
 import About from './components/About.vue';
 import Projects from './components/Projects.vue';
 import Contact from './components/Contact.vue';
+import Experience from './components/Experience.vue';
 </script>
 
 <template>
   <div class="bg-black w-full h-screen">
     <Navbar />
     <Hero/>
-    <About/>
+    <Experience/>
     <Projects/>
     <Contact/>
   </div>
