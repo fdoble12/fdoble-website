@@ -2,7 +2,7 @@
     <nav class="bg-[#303030] p-4 fixed w-full mb-16 md:mb-18">
       <div class="container mx-auto flex flex-wrap justify-between items-center">
         <div class="text-white text-2xl md:text-3xl lg:text-4xl font-semibold mb-2 md:mb-0">
-          <a href="hero">Francis Doble</a>
+          <a href="#hero">Francis Doble</a>
         </div>
         <div class="md:flex items-center space-x-4 md:space-x-6">
           <a href="#experience" class="text-white hover:text-blue-200">Experiences</a>
