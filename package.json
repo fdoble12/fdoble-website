@@ -12,8 +12,7 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
-    "vue": "^3.3.4",
-    "vue-awesome-swiper": "^5.0.1"
+    "vue": "^3.3.4"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.2.3",

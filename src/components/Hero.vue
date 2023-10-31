@@ -12,7 +12,7 @@
       </div>
     </div>
 
-    <button @click="downloadCV" class="bg-blue-700 text-white px-4 py-2 rounded-full hover:bg-blue-600 mt-4">
+    <button class="bg-blue-700 text-white px-4 py-2 rounded-full hover:bg-blue-600 mt-4">
             Download CV
     </button>
   </section>
@@ -21,20 +21,6 @@
 <script>
 export default {
   name: 'Hero',
-  methods: {
-    downloadCV() {
-      // Define the path to the CV file in the public folder
-      const cvFilePath = '/DOBLE_FRANCIS_CV 2023.pdf'; // Update the file name as needed
-
-      // Create an anchor element for the download
-      const anchor = document.createElement('a');
-      anchor.href = cvFilePath;
-      anchor.download = 'DOBLE_FRANCIS_CV 2023.pdf'; // Update the file name as needed
-
-      // Trigger a click event on the anchor to start the download
-      anchor.click();
-    },
-  }
 };
 </script>
 
