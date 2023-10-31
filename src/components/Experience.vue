@@ -44,25 +44,25 @@ export default {
         {
           image: 'shopee.jpeg',
           title: 'Seller Operations - Strategy and Planning Intern at Shopee Philippines',
-          description: '',
+          description: 'During my internship, I had the opportunity to work on a diverse set of tasks. I analyzed KPIs for Seller Support agents, automated data pulling tasks using Google AppScript, created dashboards with Google Data Studio, and conducted evaluation of seller operations cases. This experience allowed me to develop strong analytical, automation, and data visualization skills while gaining a deep understanding of e-commerce operations.',
         }
         ,
         {
           image: 'pg.JPG',
           title: 'IT Intern at Procter & Gamble Philippines',
-          description: 'Joined XYZ Company as an intern and gained experience in data analysis and project management.',
+          description: 'During my internship at P&G with the Manufacturing IT team, I co-led a dashboard project that monitored the master data health of over 100 global manufacturing sites. I also automated the data ETL process for various dashboard projects. Additionally, I managed the successful implementation of software solutions across multiple manufacturing sites. This experience provided valuable insights into the critical role of data integrity and automation in optimizing manufacturing processes.',
         }
         ,
         {
           image: 'atram.jpeg',
           title: 'Data Team Intern at ATR Asset Management Group',
-          description: 'Joined XYZ Company as an intern and gained experience in data analysis and project management.',
+          description: 'During my internship at ATRAM, I created a data pipeline for migrating two years worth of historical data to the team\'s data warehouse, enabling better access to critical insights. I also automated a weekly data ingestion task using Python and Azure. Additionally, I developed a web application portal using Flask, HTML, and Azure Blob that streamlined the handling of missing data from various business units. This experience provided the significance of efficient data management and automation.',
         }
         ,
         {
           image: 'globe.jpeg',
           title: 'CX Data Insighting and Analytics Intern at Globe Telecom',
-          description: 'Joined XYZ Company as an intern and gained experience in data analysis and project management.',
+          description: 'During my internship at Globe, I analyzed responses from an organization-wide survey with over 20,000 participants, providing crucial insights into employee feedback. I also developed interactive dashboards using Google Data Studio to effectively communicate these insights to different business units and stakeholders. This experience deepened my data analysis skills and underscored the importance of clear data visualization for informed decision-making within the organization.',
         }
       ],
     };
