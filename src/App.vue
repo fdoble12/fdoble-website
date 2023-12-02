@@ -5,13 +5,17 @@ import About from './components/About.vue';
 import Projects from './components/Projects.vue';
 import Contact from './components/Contact.vue';
 import Experience from './components/Experience.vue';
+import Cocurriculars from './components/Cocurriculars.vue';
+import TrialExp from './components/TrialExp.vue';
 </script>
 
 <template>
   <div class="bg-black w-full h-screen">
     <Navbar />
     <Hero/>
-    <Experience/>
+    <About/>
+    <TrialExp/>
+    <Cocurriculars/>
     <Projects/>
     <Contact/>
   </div>

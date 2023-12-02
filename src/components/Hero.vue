@@ -1,21 +1,22 @@
 <template>
-<section class="container mx-auto bg-black text-white min-h-screen flex flex-col items-center justify-center" >    <!-- Top: Large Text with Animation -->
-    <h1 class="text-2xl md:text-4xl lg:text-[90px] font-extrabold text-center m-4 p-8">
-      FRANCIS DOBLE
+<div id="experience" class="bg-teal-400 py-8 border-2 border-black">
+  <section class="container mx-auto text-white min-h-screen flex flex-col items-center justify-center" >    <!-- Top: Large Text with Animation -->
+    <h1 class="text-2xl text-black md:text-4xl lg:text-[90px] font-extrabold text-center m-4 p-8">
+      Hi!
+    </h1>
+    <h1 class="text-2xl text-black md:text-4xl lg:text-[90px] font-extrabold text-center m-4 p-8">
+      I'm Francis Doble
     </h1>
 
-    <!-- Bottom: Editable Introduction with Animation -->
     <div class="w-full md:w-1/2 p-2 pt-0">
         <!-- Placeholder for your introduction -->
-        <div class="p-2 rounded-md text-gray-200 text-justify">
-          I am Francis Doble, a 4th-year Computer Science student at De La Salle University-Manila. I am a goal-oriented and eager individual with leadership skills developed through my co-curricular activities. I have gained practical experience in various areas, including data analysis, data engineering, project management, software testing and development, and automation, through multiple internships. Additionally, I have acquired technical proficiency in Azure, Microsoft Power Tools, Python, JavaScript, Vue.js, Tailwind CSS, and database management tools like MongoDB and MySQL. My curiosity drives me to constantly learn and improve my skills. I'm always excited to take on new challenges and work on innovative projects.
+        <div class="p-2 rounded-md text-gray-200 text-black text-center">
+          4th Year Computer Science undergraduate at De La Salle University - Manila
       </div>
     </div>
-
-    <button @click="downloadCV" class="bg-blue-700 text-white px-4 py-2 rounded-full hover:bg-blue-600 mt-4">
-            Download CV
-    </button>
   </section>
+</div>
+
 </template>
 
 <script>

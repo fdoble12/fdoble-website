@@ -3,39 +3,37 @@
     <div class="container mx-auto">
       <h2 class="text-3xl font-semibold text-gray-800 mb-6">My Experiences</h2>
 
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        <div v-for="(experience, index) in experiences" :key="index">
-          <div class="bg-white p-4 rounded-lg shadow-md flex flex-col sm:flex-row">
-            <div class="sm:w-2/5 pr-4">
+      <carousel :itemsToShow="1" :wrapAround="true" :autoplay="false">
+        <slide v-for="(experience, index) in experiences" :key="index">
+          <div class="bg-white p-4 rounded-lg shadow-md flex flex-col md:flex-row">
+            <div class="md:w-2/5 pr-4">
               <img v-bind:src="experience.image" class="w-full h-full">
             </div>
-            <div class="sm:w-3/5">
+            <div class="md:w-3/5">
               <h3 class="text-2xl font-semibold text-gray-800 mb-2">{{ experience.title }}</h3>
               <p class="text-gray-700 text-justify">{{ experience.description }}</p>
             </div>
           </div>
-        </div>
-      </div>
+        </slide>
+      </carousel>
+      
     </div>
   </div>
 </template>
 
 <script>
+import { Carousel, Slide } from 'vue3-carousel';
+import 'vue3-carousel/dist/carousel.css';
+
 export default {
   name: 'Experience',
+  components: {
+    Carousel,
+    Slide
+  },
   data() {
     return {
       experiences: [
-        {
-          image: 'bp.jpg',
-          title: 'Batch President',
-          description: 'In my second year of college, I was elected as the Batch President of Computer Batch 2024. During my stint, I was able to oversee 7 committees with 50 officers, and delivered over 8 projects for approximately 300 students of the batch. The experiences I had during my term helped me develop my leadership and organizational skills.',
-        },
-        {
-          image: 'cp.jpeg',
-          title: 'College President',
-          description: 'During my third year, I became the College President of Computer Studies Government (CSG). I was the given the opportunity to spearhead more than 12 projects for over 3,000 students under the College of Computer Studies. Moreover, I was also able to collaborate with 8 organizations under the college and oversee the college government with 8 commitees and 80 officers.',
-        },
         {
           image: 'rogomi.jpeg',
           title: 'Software Tester Intern at Rogomi Incorporated',
@@ -56,7 +54,7 @@ export default {
         {
           image: 'atram.jpeg',
           title: 'Data Team Intern at ATR Asset Management Group',
-          description: 'During my internship at ATRAM, I created a data pipeline for migrating two years worth of historical data to the team\'s data warehouse, enabling better access to critical insights. I also automated a weekly data ingestion task using Python and Azure. Additionally, I developed a web application portal using Flask, HTML, and Azure Blob that streamlined the handling of missing data from various business units. This experience provided the significance of efficient data management and automation.',
+          description: 'During my internship at ATRAM, I handled several projects that are focused mainly on data management and automation. I was able to utilize tools and platforms such as Azure. This experience provided the significance of efficient data management and automation.',
         }
         ,
         {

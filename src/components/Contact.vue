@@ -1,5 +1,5 @@
 <template>
-    <section id="contact" class="bg-white py-16 min-h-[25vh]">
+    <section id="contact" class="bg-white py-16 min-h-[25vh] border-2 border-black">
       <div class="container mx-auto">
         <h2 class="text-3xl md:text-4xl font-semibold mb-4">Contact Me</h2>
   
