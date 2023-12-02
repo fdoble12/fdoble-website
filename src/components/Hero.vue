@@ -10,7 +10,7 @@
 
     <div class="w-full md:w-1/2 p-2 pt-0">
         <!-- Placeholder for your introduction -->
-        <div class="p-2 rounded-md text-gray-200 text-black text-center">
+        <div class="p-2 rounded-md text-black text-center">
           4th Year Computer Science undergraduate at De La Salle University - Manila
       </div>
     </div>
