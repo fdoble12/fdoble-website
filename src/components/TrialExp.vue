@@ -1,34 +1,38 @@
 <template>
     <div id="trialExp" class="border-2 border-black">
-        <div class="container mx-auto px-64 py-8">
+      <div class="container mx-auto px-4 sm:px-8 md:px-16 lg:px-32 xl:px-64 py-8">
         <h2 class="text-3xl font-semibold text-gray-800 mb-6">Internship Experiences</h2>
         <ul>
-            <!-- Loop through experiences using v-for -->
-            <li v-for="(experience, index) in experiences" :key="index" class="py-4 border-2 border-black">
-            <div class="flex justify-between items-center">
-                <!-- Left side: Experience details -->
-                <div class="mx-10">
-                    <div class="font-bold text-lg">{{ experience.role }} at {{ experience.company }}</div>
-                    <div class="text-gray-600">{{ experience.duration }}</div>
-                    <!-- Description will show/hidden based on the 'expanded' property -->
-                    <div v-if="experience.expanded" class="text-gray-800 mt-2">
-                        <ul>
-                            <li v-for="(desc,index) in experience.description" :key="index">
-                                {{ desc }}
-                            </li>
-                        </ul>
-                    </div>
+          <!-- Loop through experiences using v-for -->
+          <li
+            v-for="(experience, index) in experiences"
+            :key="index"
+            class="py-4 border-2 border-black"
+          >
+            <div class="flex flex-col sm:flex-row justify-between items-center">
+              <!-- Left side: Experience details -->
+              <div class="lg:mb-4 mx-10 sm:mb-0 sm:mr-10">
+                <div class="font-bold text-lg">{{ experience.role }} at {{ experience.company }}</div>
+                <div class="text-gray-600">{{ experience.duration }}</div>
+                <!-- Description will show/hidden based on the 'expanded' property -->
+                <div v-if="experience.expanded" class="text-gray-800 mt-2">
+                  <ul>
+                    <li v-for="(desc, index) in experience.description" :key="index">
+                      {{ desc }}
+                    </li>
+                  </ul>
                 </div>
-                <!-- Right side: Button to toggle description -->
-                <button @click="toggleExperience(index)" class="mx-10">
-                    <!-- Conditional rendering for '+' or 'x' based on the 'expanded' property -->
-                    <span v-if="experience.expanded" class="text-2xl font-bold">-</span>
-                    <span v-else class="text-2xl font-bold">+</span>
-                </button>
+              </div>
+              <!-- Right side: Button to toggle description -->
+              <button @click="toggleExperience(index)" class="mx-2 sm:mx-10">
+                <!-- Conditional rendering for '+' or 'x' based on the 'expanded' property -->
+                <span v-if="experience.expanded" class="text-2xl font-bold">-</span>
+                <span v-else class="text-2xl font-bold">+</span>
+              </button>
             </div>
-            </li>
+          </li>
         </ul>
-        </div>
+      </div>
     </div>
   </template>
 
