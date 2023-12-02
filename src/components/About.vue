@@ -5,7 +5,7 @@
       <!-- Circle for the Avatar/Photo -->
       <div class="w-64 h-64 rounded-full">
         <img
-                src="fd.jpg"
+                src="../assets/fd.jpg"
                 alt="Project 2"
                 class="w-64 h-64 rounded-full object-cover rounded border-2 border-black"
               />
