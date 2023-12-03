@@ -15,7 +15,7 @@
         <div class="ml-4 p-4 md:p-6 bg-white rounded-lg shadow-lg border-2 border-gray-800 max-w-[600px]">
           <h2 class="text-2xl md:text-3xl font-bold mb-2">About Me</h2>
           <p class="text-gray-700 text-md md:text-lg text-justify">
-            I am Francis Doble, a 4th-year Computer Science undergraduate at De La Salle University-Manila. I am a goal-oriented and eager individual with leadership skills developed through my co-curricular activities. Through multiple internship experiences, I have gained practical knowledge in different areas, including data analysis, data engineering, project management, software development, and automation. I'm always excited to take on new challenges and work on innovative projects.
+            I am Francis Doble, a 4th-year Computer Science undergraduate at De La Salle University-Manila. I am a goal-oriented and eager person with leadership skills developed through my co-curricular activities. <br><br>Through multiple internship experiences, I have gained practical knowledge in different areas, including data analysis, data engineering, project management, software development, and automation. <br><br> I'm always excited to take on new challenges and work on innovative projects.
           </p>
         </div>
       </div>
