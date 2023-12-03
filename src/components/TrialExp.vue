@@ -2,7 +2,7 @@
     <div id="trialExp" class="border-2 border-black">
       <div class="container mx-auto px-4 sm:px-8 md:px-16 lg:px-32 xl:px-64 py-8">
         <h2 class="text-3xl font-semibold text-gray-800 mb-6">Internship Experiences</h2>
-        <ul>
+        <ul class="border-2 border-black">
           <!-- Loop through experiences using v-for -->
           <li
             v-for="(experience, index) in experiences"
