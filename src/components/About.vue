@@ -33,24 +33,29 @@ export default {
   },
   methods: {
     handleScroll() {
-      const aboutSection = document.getElementById('about');
-      const imageDiv = aboutSection.querySelector('.about-image');
-      const textDiv = aboutSection.querySelector('.about-text');
-      const sectionPos = aboutSection.getBoundingClientRect();
+      // Check if the screen width is larger than a specific breakpoint, e.g., 768px for tablets
+      if(window.innerWidth > 600) {
+        const aboutSection = document.getElementById('about');
+        const imageDiv = aboutSection.querySelector('.about-image');
+        const textDiv = aboutSection.querySelector('.about-text');
+        const sectionPos = aboutSection.getBoundingClientRect();
 
-      // Calculate the percentage of the section in view
-      const scrollPercent = Math.min(1, (window.innerHeight - sectionPos.top) / window.innerHeight);
+        // Calculate the percentage of the section in view
+        const scrollPercent = Math.min(1, (sectionPos.top) / window.innerHeight);
 
-      // Adjust transform based on scroll percent
-      imageDiv.style.transform = `translateX(${-50 * scrollPercent}px)`; // Adjust values as needed
-      textDiv.style.transform = `translateX(${50 * scrollPercent}px)`; // Adjust values as needed
+        // Adjust transform based on scroll percent
+        imageDiv.style.transform = `translateX(${-50 * scrollPercent}px)`; // Adjust values as needed
+        textDiv.style.transform = `translateX(${50 * scrollPercent}px)`; // Adjust values as needed
+        
+      }
     }
   }
 };
 </script>
 
+
 <style scoped>
   .about-image, .about-text {
-    transition: transform 1s ease-out;
+    transition: transform 10ms ease-out;
   }
 </style>
