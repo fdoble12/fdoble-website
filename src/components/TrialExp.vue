@@ -9,14 +9,15 @@
             :key="index"
             class="py-4 border-2 border-black"
           >
-            <div class="flex flex-col sm:flex-row justify-between items-center">
+            <div class="flex flex-col sm:flex-row justify-between">
               <!-- Left side: Experience details -->
               <div class="lg:mb-4 mx-10 sm:mb-0 sm:mr-10">
-                <div class="font-bold text-lg">{{ experience.role }} at {{ experience.company }}</div>
+                <div class="font-bold text-xl">{{ experience.role }}</div>
+                <div class="italic text-lg">{{ experience.company }}</div>
                 <div class="text-gray-600">{{ experience.duration }}</div>
                 <!-- Description will show/hidden based on the 'expanded' property -->
                 <div v-if="experience.expanded" class="text-gray-800 mt-2">
-                  <ul>
+                  <ul class="list-disc mx-4 lg:text-lg sm:text-base">
                     <li v-for="(desc, index) in experience.description" :key="index">
                       {{ desc }}
                     </li>
@@ -47,35 +48,35 @@ export default {
           company: "Globe Telecom",
           role: "CX Data Insighting and Analytics Intern",
           duration: "Current",
-          description: ["- Visualized and analyzed data gathered from wide-range of employee survey"],
+          description: ["Visualized and analyzed data gathered from wide-range of employee survey"],
           expanded: false,
         },
         {
           company: "Procter & Gamble",
           role: "IT Intern",
           duration: "2023",
-          description: ["- Co-led a dashboard project utilized by over 100 global manufacturing sites", "- Created a data ETL pipeline for data from various manufacturing sites' database","- Managed multiple implementations of different plants' software solutions"],
+          description: ["Co-led a dashboard project utilized by over 100 global manufacturing sites","Managed multiple implementations of different plants' software solutions","Created a data pipeline that handled data from various manufacturing plants for a dashboard monitoring project"],
           expanded: false,
         },
         {
           company: "ATRAM Group",
           role: "Data Intern",
           duration: "2023",
-          description: ["- Created multiple data ETL pipelines for the company's data warehouse","- Developed a web application that allows users from other BUs to handle missing data from the data warehouse"],
+          description: ["Created data ETL pipelines for the company's data warehouse","Developed a web application that allowed users from other BUs to handle missing data from the data warehouse"],
           expanded: false,
         },
         {
           company: "Shopee Philippines",
           role: "Seller Operations-Strategy and Planning Intern",
           duration: "2022",
-          description: ["- Analyzed the KPIs of Seller Support agents","- Automated multiple data ingestion tasks of the team","- Handled the data scrubbing of various seller support cases"],
+          description: ["Analyzed the KPIs of Seller Support agents","Automated multiple data ingestion tasks of the team","Handled the data scrubbing of various seller support cases"],
           expanded: false,
         },
         {
           company: "Rogomi Incorporated",
           role: "Student Intern",
           duration: "2022",
-          description: ["- Developed a Facebook chatbot using Meta API and Python", "- Performed software testing on multiple software projects"],
+          description: ["Developed a Facebook chatbot using Meta API and Python", "Performed software testing on multiple software projects"],
           expanded: false,
         },
         // Add more experiences as needed
