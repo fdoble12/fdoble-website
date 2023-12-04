@@ -11,7 +11,7 @@
 
       <div class="w-full md:w-1/2 p-2 pt-0">
         <!-- Typing animation container -->
-        <div id="typing-container" class="p-2 rounded-md text-black text-center">
+        <div id="typing-container" class="p-2 rounded-md text-xl text-black text-center">
           <!-- Placeholder for typing text -->
         </div>
     </div>
