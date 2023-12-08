@@ -47,7 +47,7 @@ export default {
         {
           company: "Globe Telecom",
           role: "CX Data Insighting and Analytics Intern",
-          duration: "Current",
+          duration: "2023",
           description: ["Visualized and analyzed data gathered from wide-range of employee survey"],
           expanded: false,
         },
