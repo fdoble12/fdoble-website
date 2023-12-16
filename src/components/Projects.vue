@@ -31,6 +31,18 @@
             <p class="text-gray-700 text-justify">Lash Out MNL Beauty Lounge is a beauty services parlor that operates at BF Homes Almanza, Las Pinas City, Philippines. This web application is <span class="font-bold">created using Vue, NodeJS Express, and MongoDB</span> to handle the booking services of the lash studio.</p>
           </div>
 
+          <div class="bg-white p-4 rounded-lg shadow-md border-2 border-black">
+            <div class="mb-4">
+              <img
+                src="../assets/yt-sent.png"
+                alt="Project 3"
+                class="w-full h-80 object-cover rounded border-2 border-black"
+              />
+            </div>
+            <h3 class="text-xl underline font-semibold mb-2"><a href="https://github.com/fdoble12/yt-sentiments-webapp" class="hover:text-blue-500"> YouTube Comments Sentiment Analysis Web Application </a></h3>
+            <p class="text-gray-700 text-justify">A simple web application that applies sentiment analysis on comments from YouTube videos.<span class="font-bold"> This app uses Vue.js, Flask, Flair Classifier, and YouTube Data API</span></p>
+          </div>
+
           <!-- Project Card 3 -->
           <div class="bg-white p-4 rounded-lg shadow-md border-2 border-black">
             <div class="mb-4">
