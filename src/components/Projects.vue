@@ -14,10 +14,10 @@
                 class="w-full h-80 object-cover rounded border-2 border-black"
               />
             </div>
-            <h3 class="text-xl underline font-semibold mb-2"><a href="https://github.com/nicapos/discussion-forum" class="hover:text-blue-500"> Disqussip </a></h3>
+            <h3 class="text-xl text-blue-600 underline font-semibold mb-2"><a href="https://github.com/nicapos/discussion-forum" class="hover:text-blue-800"> Disqussip </a></h3>
             <p class="text-gray-700 text-justify">A web application that allows users to create and participate in discussion forums. <span class="font-bold">Built using Node.js (Express), Handlebars, and MongoDB</span>, that handled the user interface, API calls, and data storage of the application.</p>
           </div>
-  
+          
           <!-- Project Card 2 -->
           <div class="bg-white p-4 rounded-lg shadow-md border-2 border-black">
             <div class="mb-4">
@@ -27,7 +27,7 @@
                 class="w-full h-80 object-cover rounded border-2 border-black"
               />
             </div>
-            <h3 class="text-xl underline font-semibold mb-2"><a href="https://github.com/leimons/LashOutMNL" class="hover:text-blue-500"> LashoutMnl </a></h3>
+            <h3 class="text-xl underline text-blue-600 font-semibold mb-2"><a href="https://github.com/leimons/LashOutMNL" class="hover:text-blue-800"> LashoutMnl </a></h3>
             <p class="text-gray-700 text-justify">Lash Out MNL Beauty Lounge is a beauty services parlor that operates at BF Homes Almanza, Las Pinas City, Philippines. This web application is <span class="font-bold">created using Vue, NodeJS Express, and MongoDB</span> to handle the booking services of the lash studio.</p>
           </div>
 
@@ -39,8 +39,21 @@
                 class="w-full h-80 object-cover rounded border-2 border-black"
               />
             </div>
-            <h3 class="text-xl underline font-semibold mb-2"><a href="https://github.com/fdoble12/yt-sentiments-webapp" class="hover:text-blue-500"> YouTube Comments Sentiment Analysis Web Application </a></h3>
+            <h3 class="text-xl text-blue-600 underline font-semibold mb-2"><a href="https://github.com/fdoble12/yt-sentiments-webapp" class="hover:text-blue-800"> YouTube Comments Sentiment Analysis Web Application </a></h3>
             <p class="text-gray-700 text-justify">A simple web application that applies sentiment analysis on comments from YouTube videos.<span class="font-bold"> This app uses Vue.js, Flask, Flair Classifier, and YouTube Data API</span></p>
+          </div>
+
+          <!-- Project Card 2 -->
+          <div class="bg-white p-4 rounded-lg shadow-md border-2 border-black">
+            <div class="mb-4">
+              <img
+                src="../assets/filcrest.png"
+                alt="Project 2"
+                class="w-full h-80 object-cover rounded border-2 border-black"
+              />
+            </div>
+            <h3 class="text-xl text-blue-600 underline font-semibold mb-2"><a href="https://github.com/fdoble12/filcrest-app" class="hover:text-blue-800"> Real Estate Website </a></h3>
+            <p class="text-gray-700 text-justify">A real estate website that shows details about a real estate firm and its featured listings. <span class="font-bold">The website was created using Vue.js, Vue router, and Tailwind CSS.</span></p>
           </div>
 
           <!-- Project Card 3 -->
@@ -52,7 +65,7 @@
                 class="w-full h-80 object-cover rounded border-2 border-black"
               />
             </div>
-            <h3 class="text-xl underline font-semibold mb-2"><a href="https://github.com/donnielle-andres/MOBDEVE-MCO" class="hover:text-blue-500"> Coffee Ordering Android Application </a></h3>
+            <h3 class="text-xl text-blue-600 underline font-semibold mb-2"><a href="https://github.com/donnielle-andres/MOBDEVE-MCO" class="hover:text-blue-800"> Coffee Ordering Android Application </a></h3>
             <p class="text-gray-700 text-justify">This coffee ordering application is inspired by Yardstick coffee's coffee ordering application. Users are able to select from a wide-range of drinks selection and place an order, selecting their delivery address. This Android app was<span class="font-bold"> developed using Kotlin and Google Maps API.</span></p>
           </div>
           
