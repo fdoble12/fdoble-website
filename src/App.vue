@@ -17,8 +17,8 @@ import TrialExp from './components/TrialExp.vue';
     <TrialExp/>
     <Cocurriculars/>
     <Projects/>
-    <Contact/>
     <Experience/>
+    <Contact/>
   </div>
     
 </template>
