@@ -7,6 +7,7 @@ import Contact from './components/Contact.vue';
 import Experience from './components/Experience.vue';
 import Cocurriculars from './components/Cocurriculars.vue';
 import TrialExp from './components/TrialExp.vue';
+import Skills from './components/Skills.vue';
 </script>
 
 <template>
@@ -14,6 +15,7 @@ import TrialExp from './components/TrialExp.vue';
     <Navbar />
     <Hero/>
     <About/>
+    <Skills/>
     <TrialExp/>
     <Cocurriculars/>
     <Projects/>

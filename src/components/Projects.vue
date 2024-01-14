@@ -52,7 +52,7 @@
                 class="w-full h-80 object-cover rounded border-2 border-black"
               />
             </div>
-            <h3 class="text-xl text-blue-600 underline font-semibold mb-2"><a href="https://github.com/fdoble12/filcrest-app" class="hover:text-blue-800"> Real Estate Website </a></h3>
+            <h3 class="text-xl text-blue-600 underline font-semibold mb-2"><a href="https://filcrestrealty.vercel.app/" class="hover:text-blue-800"> Real Estate Website </a></h3>
             <p class="text-gray-700 text-justify">A real estate website that shows details about a real estate firm and its featured listings. <span class="font-bold">The website was created using Vue.js, Vue router, and Tailwind CSS.</span></p>
           </div>
 
