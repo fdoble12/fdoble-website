@@ -20,63 +20,63 @@ export default {
             skills: [
     {
         title: "HTML",
-        img: "/skills/1.png"
+        img: "./skills/1.png"
     },
     {
         title: "Javascript",
-        img: "/skills/2.png"
+        img: "./skills/2.png"
     },
     {
         title: "CSS",
-        img: "/skills/3.png"
+        img: "./skills/3.png"
     },
     {
         title: "TailwindCSS",
-        img: "/skills/4.png"
+        img: "./skills/4.png"
     },
     {
         title: "Vue.js",
-        img: "/skills/5.png"
+        img: "./skills/5.png"
     },
     {
         title: "NodeJS",
-        img: "/skills/6.png"
+        img: "./skills/6.png"
     },
     {
         title: "Python Flask",
-        img: "/skills/7.png"
+        img: "./skills/7.png"
     },
     {
         title: "MongoDB",
-        img: "/skills/8.png"
+        img: "./skills/8.png"
     },
     {
         title: "MySQL",
-        img: "/skills/9.png"
+        img: "./skills/9.png"
     },
     {
         title: "Microsoft SQL",
-        img: "/skills/10.png"
+        img: "./skills/10.png"
     },
     {
         title: "Azure Data Factory",
-        img: "/skills/11.png"
+        img: "./skills/11.png"
     },
     {
         title: "Apache NiFi",
-        img: "/skills/12.png"
+        img: "./skills/12.png"
     },
     {
         title: "Knime Data Workflow",
-        img: "/skills/13.png"
+        img: "./skills/13.png"
     },
     {
         title: "Microsoft PowerBI",
-        img: "/skills/14.png"
+        img: "./skills/14.png"
     },
     {
         title: "Google Data Studio",
-        img: "/skills/15.png"
+        img: "./skills/15.png"
     }
 ]
 
