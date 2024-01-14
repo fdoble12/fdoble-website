@@ -2,7 +2,17 @@
     <section id="projects" class="bg-violet-400 border-2 border-black py-16 min-h-[70vh]">
       <div class="container mx-auto">
         <h2 class="text-3xl md:text-4xl text-black font-semibold mb-4">Projects</h2>
-  
+        <div class="bg-white p-4 rounded-lg shadow-md border-2 border-black">
+            <div class="mb-4">
+              <img
+                src="../assets/filcrest.png"
+                alt="Project 2"
+                class="w-full h-80 object-cover rounded border-2 border-black"
+              />
+            </div>
+            <h3 class="text-xl text-blue-600 underline font-semibold mb-2"><a href="https://filcrestrealty.vercel.app/" class="hover:text-blue-800"> Real Estate Website </a></h3>
+            <p class="text-gray-700 text-justify">A real estate website that shows details about a real estate firm and its featured listings. <span class="font-bold">The website was created using Vue.js, Vue router, and Tailwind CSS.</span></p>
+          </div>
         <!-- Project Cards -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <!-- Project Card 1 -->
@@ -44,17 +54,6 @@
           </div>
 
           <!-- Project Card 2 -->
-          <div class="bg-white p-4 rounded-lg shadow-md border-2 border-black">
-            <div class="mb-4">
-              <img
-                src="../assets/filcrest.png"
-                alt="Project 2"
-                class="w-full h-80 object-cover rounded border-2 border-black"
-              />
-            </div>
-            <h3 class="text-xl text-blue-600 underline font-semibold mb-2"><a href="https://filcrestrealty.vercel.app/" class="hover:text-blue-800"> Real Estate Website </a></h3>
-            <p class="text-gray-700 text-justify">A real estate website that shows details about a real estate firm and its featured listings. <span class="font-bold">The website was created using Vue.js, Vue router, and Tailwind CSS.</span></p>
-          </div>
 
           <!-- Project Card 3 -->
           <div class="bg-white p-4 rounded-lg shadow-md border-2 border-black">
