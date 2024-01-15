@@ -1,6 +1,6 @@
 <template>
-  <section id="projects" class="bg-violet-400 border-2 border-black md:py-8 min-h-[70vh]">
-    <div class="container mx-auto p-6 md:p-0 md:[160vh]">
+  <section id="projects" class="bg-violet-400 border-2 border-black py-4 md:py-8">
+    <div class="container mx-auto px-6 py-2 md:p-0 md:w-[160vh]">
       <h2 class="text-2xl md:text-4xl text-black font-semibold mb-4">Projects</h2>
 
       <!-- Project Cards -->
