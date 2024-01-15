@@ -5,8 +5,6 @@
   
         <!-- Project Cards -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-<<<<<<< Updated upstream
-=======
           <div class="bg-white p-4 rounded-lg shadow-md border-2 border-black">
             <div class="mb-4">
               <img
@@ -18,7 +16,6 @@
             <h3 class="text-lg md:text-xl text-blue-600 underline font-semibold mb-2"><a href="https://filcrestrealty.vercel.app/" class="hover:text-blue-800"> Real Estate Website </a></h3>
             <p class="text-sm md:text-base text-gray-700 text-justify">A real estate website that shows details about a real estate firm and its featured listings. <span class="font-bold">The website was created using Vue.js, Vue router, and Tailwind CSS.</span></p>
           </div>
->>>>>>> Stashed changes
           <!-- Project Card 1 -->
           <div class="bg-white p-4 rounded-lg shadow-md border-2 border-black">
             <div class="mb-4">
@@ -66,13 +63,8 @@
                 class="w-full h-80 object-cover rounded border-2 border-black"
               />
             </div>
-<<<<<<< Updated upstream
-            <h3 class="text-xl text-blue-600 underline font-semibold mb-2"><a href="https://filcrestrealty.vercel.app/" class="hover:text-blue-800"> Real Estate Website </a></h3>
-            <p class="text-gray-700 text-justify">A real estate website that shows details about a real estate firm and its featured listings. <span class="font-bold">The website was created using Vue.js, Vue router, and Tailwind CSS.</span></p>
-=======
             <h3 class="text-lg md:text-xl underline text-blue-600 font-semibold mb-2"><a href="https://github.com/leimons/LashOutMNL" class="hover:text-blue-800"> LashoutMnl </a></h3>
             <p class="text-sm md:text-base text-gray-700 text-justify">Lash Out MNL Beauty Lounge is a beauty services parlor that operates at BF Homes Almanza, Las Pinas City, Philippines. This web application is <span class="font-bold">created using Vue, NodeJS Express, and MongoDB</span> to handle the booking services of the lash studio.</p>
->>>>>>> Stashed changes
           </div>
 
           <!-- Project Card 3 -->
