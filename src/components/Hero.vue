@@ -1,11 +1,6 @@
 <template>
-<<<<<<< Updated upstream
-  <div id="experience" class="bg-teal-400 py-8 border-2 border-black">
-    <section class="container mx-auto text-white min-h-screen flex flex-col items-center justify-center">
-=======
   <div id="hero" class="bg-teal-400 py-8 border-2 border-black">
     <section class="container mx-auto text-white h-[40vh] md:min-h-screen flex flex-col items-center justify-center pt-8">
->>>>>>> Stashed changes
       <!-- Top: Large Text with Animation -->
       <h1 class="text-2xl text-black md:text-4xl lg:text-[90px] font-extrabold text-center m-1 md:m-4 p-4 md:p-8 falling-text">
         Hi!
