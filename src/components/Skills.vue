@@ -1,6 +1,6 @@
 <template>
-  <div id="trialExp" class="border-2 border-black bg-gray-800">
-      <div class="container mx-auto my-12 px-10 md:w-[125vh] rounded-lg ">
+  <div id="skills" class="border-2 border-black bg-gray-800">
+      <div class="container mx-auto my-4 md:my-12 px-10 md:w-[125vh] rounded-lg ">
         <h1 class="text-2xl md:text-3xl font-semibold text-gray-200 pb-0 md:pb-4">My Skills</h1>
         <div class="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-5 gap-2 md:gap-8 py-4 ">
             <div v-for="(skill, index) in skills"

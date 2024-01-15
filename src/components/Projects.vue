@@ -1,6 +1,6 @@
 <template>
   <section id="projects" class="bg-violet-400 border-2 border-black md:py-8 min-h-[70vh]">
-    <div class="container mx-auto p-6 md:p-0">
+    <div class="container mx-auto p-6 md:p-0 md:[160vh]">
       <h2 class="text-2xl md:text-4xl text-black font-semibold mb-4">Projects</h2>
 
       <!-- Project Cards -->
@@ -9,7 +9,7 @@
         class="grid grid-cols-1"
         :modules="modules"
         :space-between="50"
-        :pagination="{ clickable: true }"
+        :pagination="{ clickable: true}"
         :scrollbar="{ draggable: true }"
         @swiper="onSwiper"
         @slideChange="onSlideChange"
@@ -17,13 +17,14 @@
         <swiper-slide
           v-for="(project, index) in projects"
           :key="index"
+          class="pb-10"
         > 
           <ProjectCard :project="project"></ProjectCard>
         </swiper-slide>
       </swiper>
 
       <!-- Display cards without carousel for larger screens -->
-      <div v-else class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div v-else class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         <ProjectCard v-for="(project, index) in projects" :key="index" :project="project"></ProjectCard>
       </div>
     </div>
@@ -70,33 +71,38 @@
         projects: [
           {
             title: "Real Estate Website",
-            description: "A real estate website that shows details about a real estate firm and its featured listings. The website was created using Vue.js, Vue router, and Tailwind CSS.",
+            description: "A real estate website that shows details about a real estate firm and its featured listings.",
             img: "/projects/filcrest.png",
-            url: "https://filcrestrealty.vercel.app/"
+            url: "https://filcrestrealty.vercel.app/",
+            skills: ["HTML","CSS","JavaScript","VueJS","TailwindCSS"]
           },
           {
             title: "Disqussip",
-            description: "A web application that allows users to create and participate in discussion forums. Built using Node.js (Express), Handlebars, and MongoDB, it handles the user interface, API calls, and data storage of the application.",
+            description: "A web application that allows users to create and participate in discussion forums.",
             img: "/projects/disqussip.png",
-            url: "https://github.com/nicapos/discussion-forum"
+            url: "https://github.com/nicapos/discussion-forum",
+            skills: ["HTML","CSS","JavaScript","Node.js","MongoDB"]
           },
           {
-            title: "YouTube Comments Sentiment Analysis Web Application",
-            description: "A simple web application that applies sentiment analysis on comments from YouTube videos. This app uses Vue.js, Flask, Flair Classifier, and YouTube Data API.",
+            title: "Sentiment Analysis Web Application",
+            description: "A simple web application that applies sentiment analysis on comments from YouTube videos.",
             img: "/projects/yt-sent.png",
-            url: "https://github.com/fdoble12/yt-sentiments-webapp"
+            url: "https://github.com/fdoble12/yt-sentiments-webapp",
+            skills: ["VueJS","Python","Flask","Text Classifier"]
           },
           {
             title: "LashoutMnl",
-            description: "Lash Out MNL Beauty Lounge is a beauty services parlor that operates at BF Homes Almanza, Las Pinas City, Philippines. This web application is created using Vue, NodeJS Express, and MongoDB to handle the booking services of the lash studio.",
+            description: "This web application handles the booking services of LashOut MNL studio.",
             img: "/projects/lashout.png",
-            url: "https://github.com/leimons/LashOutMNL"
+            url: "https://github.com/leimons/LashOutMNL",
+            skills: ["VueJS","Node.js","MongoDB"]
           },
           {
             title: "Coffee Ordering Android Application",
-            description: "This coffee ordering application is inspired by Yardstick coffee's coffee ordering application. Users are able to select from a wide range of drinks and place an order, selecting their delivery address. This Android app was developed using Kotlin and Google Maps API.",
+            description: "Users are able to choose and place an order, as well as selecting their delivery address.",
             img: "/projects/yc.png",
-            url: "https://github.com/donnielle-andres/MOBDEVE-MCO"
+            url: "https://github.com/donnielle-andres/MOBDEVE-MCO",
+            skills:["Google API", "Kotlin"]
           }
         ],
 

@@ -1,15 +1,15 @@
 <template>
-  <div id="hero" class="bg-teal-400 py-8 border-2 border-black">
+  <div id="hero" class="bg-teal-400 py-12 border-2 border-black">
     <section class="container mx-auto text-white h-[40vh] md:min-h-screen flex flex-col items-center justify-center pt-8">
       <!-- Top: Large Text with Animation -->
-      <h1 class="text-2xl text-black md:text-4xl lg:text-[90px] font-extrabold text-center m-1 md:m-4 p-4 md:p-8 falling-text">
+      <h1 class="text-2xl text-black md:text-4xl lg:text-[90px] font-extrabold text-center m-1 md:m-4 p-1 md:p-4 md:p-8 falling-text">
         Hi!
       </h1>
-      <h1 class="text-2xl text-black md:text-4xl lg:text-[90px] font-extrabold text-center m-1 md:m-4 p-4 md:p-8 falling-text">
+      <h1 class="text-2xl text-black md:text-4xl lg:text-[90px] font-extrabold text-center m-1 md:m-4 p-1 md:p-4 md:p-8 falling-text">
         I'm Francis Doble
       </h1>
 
-      <div class="w-full md:w-1/2 p-2 pt-0">
+      <div class="w-full md:w-1/2 p-0 md:p-2 pt-0">
         <!-- Typing animation container -->
         <div id="typing-container" class="p-2 rounded-md text-lg md:text-xl text-black text-center">
           <!-- Placeholder for typing text -->

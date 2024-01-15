@@ -5,9 +5,9 @@
         <a href="#about" class="text-white hover:text-teal-400">Francis Doble</a>
       </div>
       <div class="md:flex items-center space-x-4 md:space-x-6">
-        <a href="#trialExp" class="text-white text-xl md:text-base lg:text-lg hover:text-teal-200">Experience</a>
-        <a href="#projects" class="text-white text-xl md:text-base lg:text-lg hover:text-teal-200">Projects</a>
-        <a href="#contact" class="text-white text-xl md:text-base lg:text-lg hover:text-teal-200">Contact</a>
+        <a href="#trialExp" class="text-white text-md md:text-xl md:text-base lg:text-lg hover:text-teal-200">Experience</a>
+        <a href="#projects" class="text-white text-md md:text-xl md:text-base lg:text-lg hover:text-teal-200">Projects</a>
+        <a href="#contact" class="text-white text-md md:text-xl md:text-base lg:text-lg hover:text-teal-200">Contact</a>
       </div>
     </div>
   </nav>

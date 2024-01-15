@@ -12,12 +12,12 @@
             <div class="flex flex-col sm:flex-row justify-between">
               <!-- Left side: Experience details -->
               <div class="lg:mb-4 mx-6 md:mx-10 sm:mb-0 sm:mr-10">
-                <div class="font-bold text-md md:text-xl">{{ experience.role }}</div>
-                <div class="italic text-md md:text-lg">{{ experience.company }}</div>
-                <div class="text-gray-600 text-sm md:text-base  ">{{ experience.duration }}</div>
+                <div class="font-bold text-sm md:text-xl">{{ experience.role }}</div>
+                <div class="italic text-sm md:text-lg">{{ experience.company }}</div>
+                <div class="text-gray-600 text-xs md:text-base  ">{{ experience.duration }}</div>
                 <!-- Description will show/hidden based on the 'expanded' property -->
                 <div v-if="experience.expanded" class="text-gray-800 mt-2">
-                  <ul class="list-disc mx-4 text-base lg:text-lg">
+                  <ul class="list-disc mx-4 text-sm lg:text-lg">
                     <li v-for="(desc, index) in experience.description" :key="index">
                       {{ desc }}
                     </li>
