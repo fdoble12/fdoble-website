@@ -4,8 +4,6 @@ import Hero from './components/Hero.vue';
 import About from './components/About.vue';
 import Projects from './components/Projects.vue';
 import Contact from './components/Contact.vue';
-import Experience from './components/Experience.vue';
-import Cocurriculars from './components/Cocurriculars.vue';
 import TrialExp from './components/TrialExp.vue';
 import Skills from './components/Skills.vue';
 </script>
