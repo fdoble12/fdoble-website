@@ -1,99 +1,21 @@
 <template>
-  <section id="projects" class="bg-violet-400 border-2 border-black md:py-8 min-h-[70vh]">
-    <div class="container mx-auto p-6 md:p-0">
-      <h2 class="text-2xl md:text-4xl text-black font-semibold mb-4">Projects</h2>
-
-      <!-- Project Cards -->
-      <swiper
-        v-if="isSmallScreen"
-        class="grid grid-cols-1"
-        :modules="modules"
-        :space-between="50"
-        :pagination="{ clickable: true }"
-        :scrollbar="{ draggable: true }"
-        @swiper="onSwiper"
-        @slideChange="onSlideChange"
-      >
-        <swiper-slide
-          v-for="(project, index) in projects"
-          :key="index"
-          class="bg-white p-4 rounded-lg shadow-md border-2 border-black"
-        >
-          <!-- Project Card Content -->
-          <div class="mb-4">
-            <img
-              :src="project.img"
-              :alt="project.title"
-              class="w-full h-80 object-cover rounded border-2 border-black"
-            />
-          </div>
-          <h3 class="text-lg md:text-xl text-blue-600 underline font-semibold mb-2">
-            <a :href="project.url" class="hover:text-blue-800">{{ project.title }}</a>
-          </h3>
-          <p class="text-sm md:text-base text-gray-700 text-justify">{{ project.description }}</p>
-        </swiper-slide>
-      </swiper>
-
-      <!-- Display cards without carousel for larger screens -->
-      <div v-else class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <div
-          v-for="(project, index) in projects"
-          :key="index"
-          class="bg-white p-4 rounded-lg shadow-md border-2 border-black"
-        >
-          <!-- Project Card Content -->
-          <div class="mb-4">
-            <img
-              :src="project.img"
-              :alt="project.title"
-              class="w-full h-80 object-cover rounded border-2 border-black"
-            />
-          </div>
-          <h3 class="text-lg md:text-xl text-blue-600 underline font-semibold mb-2">
-            <a :href="project.url" class="hover:text-blue-800">{{ project.title }}</a>
-          </h3>
-          <p class="text-sm md:text-base text-gray-700 text-justify">{{ project.description }}</p>
-        </div>
-      </div>
+  <section id="projects" class="bg-violet-400 border-2 border-black md:py-8">
+    <h2 class="text-2xl md:text-4xl text-black font-semibold mb-4">Projects</h2>
+    <div class="container mx-auto grid grid-cols-3 gap-2 w-[140vh]">
+      <ProjectCard v-for="(project,index) in projects" :key="index" :project="project"></ProjectCard>
     </div>
   </section>
 </template>
   
   <script>
-  // import Swiper core and required modules
-  import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
-
-  // Import Swiper Vue.js components
-  import { Swiper, SwiperSlide } from 'swiper/vue';
-
-  // Import Swiper styles
-  import 'swiper/css';
-  import 'swiper/css/navigation';
-  import 'swiper/css/pagination';
-  import 'swiper/css/scrollbar';
-
+  import ProjectCard from './ProjectCard.vue';
   export default {
     name: 'Projects',
     components: {
-      Swiper,
-      SwiperSlide,
+      ProjectCard
     },
     data(){
       return{
-        isSmallScreen: false,
-        swiperOptions: {
-          slidesPerView: 1,
-          spaceBetween: 10,
-          loop: true,
-          pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-          },
-          navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-          },
-        },
         projects: [
           {
             title: "Real Estate Website",
@@ -126,37 +48,7 @@
             url: "https://github.com/donnielle-andres/MOBDEVE-MCO"
           }
         ],
-
       }
-    },
-    setup() {
-      const onSwiper = (swiper) => {
-        console.log(swiper);
-      };
-      const onSlideChange = () => {
-        console.log('slide change');
-      };
-      return {
-        onSwiper,
-        onSlideChange,
-        modules: [Navigation, Pagination, Scrollbar, A11y],
-      };
-    },
-    mounted() {
-      // Check screen size on mount
-      this.isSmallScreen = window.innerWidth < 640;
-      // Watch for screen size changes
-      window.addEventListener('resize', this.handleResize);
-    },
-    beforeDestroy() {
-      // Remove event listener to prevent memory leaks
-      window.removeEventListener('resize', this.handleResize);
-    },
-    methods: {
-      handleResize() {
-        // Update isSmallScreen based on screen width
-        this.isSmallScreen = window.innerWidth < 640;
-      },
     },
   };
   </script>
