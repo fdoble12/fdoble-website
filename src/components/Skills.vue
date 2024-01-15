@@ -1,11 +1,11 @@
 <template>
   <div id="trialExp" class="border-2 border-black bg-gray-800">
       <div class="container mx-auto my-12 px-10 md:w-[125vh] rounded-lg ">
-        <h1 class="text-3xl font-semibold text-gray-200 pb-4">My Skills</h1>
-        <div class="grid grid-cols-2 md:grid-cols-5 gap-2 md:gap-8 py-4 ">
+        <h1 class="text-2xl md:text-3xl font-semibold text-gray-200 pb-0 md:pb-4">My Skills</h1>
+        <div class="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-5 gap-2 md:gap-8 py-4 ">
             <div v-for="(skill, index) in skills"
                 :key="index" 
-                class="w-[15vh] h-[15vh] p-4 shadow-2xl rounded-md shadow-inner text-center border-2 bg-gray-200 border-teal-400">
+                class="w-[96px] h-[96px] sm:w-[96px] sm:h-[96px] md:w-[128px] md:h-[128px] p-4 shadow-2xl rounded-md shadow-inner text-center border-2 bg-gray-200 border-teal-400">
                 <img :src="skill.img">
             </div>
         </div>
