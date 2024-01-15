@@ -6,8 +6,8 @@
       <div class="flex items-center justify-center mx-auto">
         <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-4">
           <div v-for="(experience, index) in experiences" :key="index">
-            <div class="bg-white p-4 rounded-lg shadow-md flex flex-col justify-center items-center sm:flex-row border-2 border-black">
-              <div class="mb-2">
+            <div class="bg-white p-4 rounded-lg shadow-md flex flex-col sm:flex-row border-2 border-black">
+              <div class="sm:w-2/5 md:pr-4">
                 <img v-bind:src="experience.image" class="w-full h-full">
               </div>
               <div class="sm:w-3/5">
