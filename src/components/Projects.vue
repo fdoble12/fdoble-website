@@ -1,80 +1,163 @@
 <template>
-    <section id="projects" class="bg-violet-400 border-2 border-black md:py-8 min-h-[70vh]">
-      <div class="container mx-auto p-6 md:p-0">
-        <h2 class="text-2xl md:text-4xl text-black font-semibold mb-4">Projects</h2>
-  
-        <!-- Project Cards -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <div class="bg-white p-4 rounded-lg shadow-md border-2 border-black">
-            <div class="mb-4">
-              <img
-                src="../assets/filcrest.png"
-                alt="Project 2"
-                class="w-full h-80 object-cover rounded border-2 border-black"
-              />
-            </div>
-            <h3 class="text-lg md:text-xl text-blue-600 underline font-semibold mb-2"><a href="https://filcrestrealty.vercel.app/" class="hover:text-blue-800"> Real Estate Website </a></h3>
-            <p class="text-sm md:text-base text-gray-700 text-justify">A real estate website that shows details about a real estate firm and its featured listings. <span class="font-bold">The website was created using Vue.js, Vue router, and Tailwind CSS.</span></p>
-          </div>
-          <!-- Project Card 1 -->
-          <div class="bg-white p-4 rounded-lg shadow-md border-2 border-black">
-            <div class="mb-4">
-              <img
-                src="../assets/disqussip.png"
-                alt="Project 1"
-                class="w-full h-80 object-cover rounded border-2 border-black"
-              />
-            </div>
-            <h3 class="text-lg md:text-xl text-blue-600 underline font-semibold mb-2"><a href="https://github.com/nicapos/discussion-forum" class="hover:text-blue-800"> Disqussip </a></h3>
-            <p class="text-sm md:text-base text-gray-700 text-justify">A web application that allows users to create and participate in discussion forums. <span class="font-bold">Built using Node.js (Express), Handlebars, and MongoDB</span>, that handled the user interface, API calls, and data storage of the application.</p>
-          </div>
+  <section id="projects" class="bg-violet-400 border-2 border-black md:py-8 min-h-[70vh]">
+    <div class="container mx-auto p-6 md:p-0">
+      <h2 class="text-2xl md:text-4xl text-black font-semibold mb-4">Projects</h2>
 
-          <div class="bg-white p-4 rounded-lg shadow-md border-2 border-black">
-            <div class="mb-4">
-              <img
-                src="../assets/yt-sent.png"
-                alt="Project 3"
-                class="w-full h-80 object-cover rounded border-2 border-black"
-              />
-            </div>
-            <h3 class="text-lg md:text-xl text-blue-600 underline font-semibold mb-2"><a href="https://github.com/fdoble12/yt-sentiments-webapp" class="hover:text-blue-800"> YouTube Comments Sentiment Analysis Web Application </a></h3>
-            <p class="text-sm md:text-base text-gray-700 text-justify">A simple web application that applies sentiment analysis on comments from YouTube videos.<span class="font-bold"> This app uses Vue.js, Flask, Flair Classifier, and YouTube Data API</span></p>
+      <!-- Project Cards -->
+      <swiper
+        v-if="isSmallScreen"
+        class="grid grid-cols-1"
+        :modules="modules"
+        :space-between="50"
+        :pagination="{ clickable: true }"
+        :scrollbar="{ draggable: true }"
+        @swiper="onSwiper"
+        @slideChange="onSlideChange"
+      >
+        <swiper-slide
+          v-for="(project, index) in projects"
+          :key="index"
+          class="bg-white p-4 rounded-lg shadow-md border-2 border-black"
+        >
+          <!-- Project Card Content -->
+          <div class="mb-4">
+            <img
+              :src="project.img"
+              :alt="project.title"
+              class="w-full h-80 object-cover rounded border-2 border-black"
+            />
           </div>
+          <h3 class="text-lg md:text-xl text-blue-600 underline font-semibold mb-2">
+            <a :href="project.url" class="hover:text-blue-800">{{ project.title }}</a>
+          </h3>
+          <p class="text-sm md:text-base text-gray-700 text-justify">{{ project.description }}</p>
+        </swiper-slide>
+      </swiper>
 
-          <!-- Project Card 2 -->
-          <div class="bg-white p-4 rounded-lg shadow-md border-2 border-black">
-            <div class="mb-4">
-              <img
-                src="../assets/lashout.png"
-                alt="Project 2"
-                class="w-full h-80 object-cover rounded border-2 border-black"
-              />
-            </div>
-            <h3 class="text-lg md:text-xl underline text-blue-600 font-semibold mb-2"><a href="https://github.com/leimons/LashOutMNL" class="hover:text-blue-800"> LashoutMnl </a></h3>
-            <p class="text-sm md:text-base text-gray-700 text-justify">Lash Out MNL Beauty Lounge is a beauty services parlor that operates at BF Homes Almanza, Las Pinas City, Philippines. This web application is <span class="font-bold">created using Vue, NodeJS Express, and MongoDB</span> to handle the booking services of the lash studio.</p>
+      <!-- Display cards without carousel for larger screens -->
+      <div v-else class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div
+          v-for="(project, index) in projects"
+          :key="index"
+          class="bg-white p-4 rounded-lg shadow-md border-2 border-black"
+        >
+          <!-- Project Card Content -->
+          <div class="mb-4">
+            <img
+              :src="project.img"
+              :alt="project.title"
+              class="w-full h-80 object-cover rounded border-2 border-black"
+            />
           </div>
-
-          <!-- Project Card 3 -->
-          <div class="bg-white p-4 rounded-lg shadow-md border-2 border-black">
-            <div class="mb-4">
-              <img
-                src="../assets/yc.png"
-                alt="Project 3"
-                class="w-full h-80 object-cover rounded border-2 border-black"
-              />
-            </div>
-            <h3 class="text-lg md:text-xl text-blue-600 underline font-semibold mb-2"><a href="https://github.com/donnielle-andres/MOBDEVE-MCO" class="hover:text-blue-800"> Coffee Ordering Android Application </a></h3>
-            <p class="text-sm md:text-base text-gray-700 text-justify">This coffee ordering application is inspired by Yardstick coffee's coffee ordering application. Users are able to select from a wide-range of drinks selection and place an order, selecting their delivery address. This Android app was<span class="font-bold"> developed using Kotlin and Google Maps API.</span></p>
-          </div>
-          
+          <h3 class="text-lg md:text-xl text-blue-600 underline font-semibold mb-2">
+            <a :href="project.url" class="hover:text-blue-800">{{ project.title }}</a>
+          </h3>
+          <p class="text-sm md:text-base text-gray-700 text-justify">{{ project.description }}</p>
         </div>
       </div>
-    </section>
-  </template>
+    </div>
+  </section>
+</template>
   
   <script>
+  // import Swiper core and required modules
+  import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+
+  // Import Swiper Vue.js components
+  import { Swiper, SwiperSlide } from 'swiper/vue';
+
+  // Import Swiper styles
+  import 'swiper/css';
+  import 'swiper/css/navigation';
+  import 'swiper/css/pagination';
+  import 'swiper/css/scrollbar';
+
   export default {
     name: 'Projects',
+    components: {
+      Swiper,
+      SwiperSlide,
+    },
+    data(){
+      return{
+        isSmallScreen: false,
+        swiperOptions: {
+          slidesPerView: 1,
+          spaceBetween: 10,
+          loop: true,
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+        },
+        projects: [
+          {
+            title: "Real Estate Website",
+            description: "A real estate website that shows details about a real estate firm and its featured listings. The website was created using Vue.js, Vue router, and Tailwind CSS.",
+            img: "../src/assets/filcrest.png",
+            url: "https://filcrestrealty.vercel.app/"
+          },
+          {
+            title: "Disqussip",
+            description: "A web application that allows users to create and participate in discussion forums. Built using Node.js (Express), Handlebars, and MongoDB, it handles the user interface, API calls, and data storage of the application.",
+            img: "../src/assets/disqussip.png",
+            url: "https://github.com/nicapos/discussion-forum"
+          },
+          {
+            title: "YouTube Comments Sentiment Analysis Web Application",
+            description: "A simple web application that applies sentiment analysis on comments from YouTube videos. This app uses Vue.js, Flask, Flair Classifier, and YouTube Data API.",
+            img: "../src/assets/yt-sent.png",
+            url: "https://github.com/fdoble12/yt-sentiments-webapp"
+          },
+          {
+            title: "LashoutMnl",
+            description: "Lash Out MNL Beauty Lounge is a beauty services parlor that operates at BF Homes Almanza, Las Pinas City, Philippines. This web application is created using Vue, NodeJS Express, and MongoDB to handle the booking services of the lash studio.",
+            img: "../src/assets/lashout.png",
+            url: "https://github.com/leimons/LashOutMNL"
+          },
+          {
+            title: "Coffee Ordering Android Application",
+            description: "This coffee ordering application is inspired by Yardstick coffee's coffee ordering application. Users are able to select from a wide range of drinks and place an order, selecting their delivery address. This Android app was developed using Kotlin and Google Maps API.",
+            img: "../src/assets/yc.png",
+            url: "https://github.com/donnielle-andres/MOBDEVE-MCO"
+          }
+        ],
+
+      }
+    },
+    setup() {
+      const onSwiper = (swiper) => {
+        console.log(swiper);
+      };
+      const onSlideChange = () => {
+        console.log('slide change');
+      };
+      return {
+        onSwiper,
+        onSlideChange,
+        modules: [Navigation, Pagination, Scrollbar, A11y],
+      };
+    },
+    mounted() {
+      // Check screen size on mount
+      this.isSmallScreen = window.innerWidth < 640;
+      // Watch for screen size changes
+      window.addEventListener('resize', this.handleResize);
+    },
+    beforeDestroy() {
+      // Remove event listener to prevent memory leaks
+      window.removeEventListener('resize', this.handleResize);
+    },
+    methods: {
+      handleResize() {
+        // Update isSmallScreen based on screen width
+        this.isSmallScreen = window.innerWidth < 640;
+      },
+    },
   };
   </script>
   
