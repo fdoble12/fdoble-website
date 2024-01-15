@@ -71,7 +71,7 @@
           {
             title: "Real Estate Website",
             description: "A real estate website that shows details about a real estate firm and its featured listings. The website was created using Vue.js, Vue router, and Tailwind CSS.",
-            img: "./src/assets/filcrest.png",
+            img: "/src/assets/filcrest.png",
             url: "https://filcrestrealty.vercel.app/"
           },
           {
