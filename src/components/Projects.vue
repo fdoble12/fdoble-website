@@ -71,7 +71,7 @@
         projects: [
           {
             title: "Real Estate Website",
-            description: "A real estate website that shows details about a real estate firm and its featured listings.",
+            description: "A real estate website that shows details of a real estate firm and its featured listings.",
             img: "/projects/filcrest.png",
             url: "https://filcrestrealty.vercel.app/",
             skills: ["HTML","CSS","JavaScript","VueJS","TailwindCSS"]
