@@ -17,7 +17,6 @@ import Skills from './components/Skills.vue';
     <About/>
     <Skills/>
     <TrialExp/>
-    <Cocurriculars/>
     <Projects/>
     <Contact/>
   </div>

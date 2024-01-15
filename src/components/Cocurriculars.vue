@@ -1,11 +1,15 @@
 <template>
   <div id="cocurriculars" class="bg-gray-100 border-2 border-black py-8">
-    <div class="container mx-auto min-h-[60vh] px-6">
+    <div class="container mx-auto min-h-[60vh] w-[120vh] px-6">
       <h2 class="text-xl md:text-3xl font-semibold text-gray-800 mb-4 md:mb-6">Co-curricular Experiences</h2>
-
       <div class="flex items-center justify-center mx-auto">
-        <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-4">
-          <div v-for="(experience, index) in experiences" :key="index">
+        <swiper
+        :pagination="{ clickable: true}"
+        :modules="modules"
+        navigation
+        :scrollbar="{ draggable: true }"
+        >
+          <swiper-slide v-for="(experience, index) in experiences" :key="index">
             <div class="bg-white p-4 rounded-lg shadow-md flex flex-col sm:flex-row border-2 border-black">
               <div class="sm:w-2/5 md:pr-4">
                 <img v-bind:src="experience.image" class="w-full h-full">
@@ -15,8 +19,8 @@
                 <p class="text-gray-700 text-justify text-sm md:text-base">{{ experience.description }}</p>
               </div>
             </div>
-          </div>
-        </div>
+          </swiper-slide>
+        </swiper>
       </div>
 
     </div>
@@ -24,7 +28,26 @@
 </template>
 
 <script>
+// import Swiper core and required modules
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+
+// Import Swiper Vue.js components
+import { Swiper, SwiperSlide } from 'swiper/vue';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+
 export default {
+  components: {
+      Swiper,
+      SwiperSlide,
+    },
+    setup() {
+      return {
+        modules: [Navigation,Pagination],
+      };
+    },
   name: 'Cocurriculars',
   data() {
     return {
