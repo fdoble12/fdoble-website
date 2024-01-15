@@ -1,23 +1,23 @@
 <template>
     <div id="trialExp" class="border-2 border-black">
       <div class="container mx-auto px-4 sm:px-8 md:px-16 lg:px-32 xl:px-64 py-8">
-        <h2 class="text-xl md:text-3xl font-semibold text-gray-800 mb-6">Internship Experiences</h2>
+        <h2 class="text-3xl font-semibold text-gray-800 mb-6">Internship Experiences</h2>
         <ul class="border-2 border-black">
           <!-- Loop through experiences using v-for -->
           <li
             v-for="(experience, index) in experiences"
             :key="index"
-            class="py-2 md:py-4 border-2 border-black"
+            class="py-4 border-2 border-black"
           >
             <div class="flex flex-col sm:flex-row justify-between">
               <!-- Left side: Experience details -->
-              <div class="lg:mb-4 mx-6 md:mx-10 sm:mb-0 sm:mr-10">
-                <div class="font-bold text-md md:text-xl">{{ experience.role }}</div>
-                <div class="italic text-md md:text-lg">{{ experience.company }}</div>
-                <div class="text-gray-600 text-sm md:text-base  ">{{ experience.duration }}</div>
+              <div class="lg:mb-4 mx-10 sm:mb-0 sm:mr-10">
+                <div class="font-bold text-xl">{{ experience.role }}</div>
+                <div class="italic text-lg">{{ experience.company }}</div>
+                <div class="text-gray-600">{{ experience.duration }}</div>
                 <!-- Description will show/hidden based on the 'expanded' property -->
                 <div v-if="experience.expanded" class="text-gray-800 mt-2">
-                  <ul class="list-disc mx-4 text-base lg:text-lg">
+                  <ul class="list-disc mx-4 lg:text-lg sm:text-base">
                     <li v-for="(desc, index) in experience.description" :key="index">
                       {{ desc }}
                     </li>
