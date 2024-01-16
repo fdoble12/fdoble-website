@@ -24,7 +24,7 @@
       </swiper>
 
       <!-- Display cards without carousel for larger screens -->
-      <div v-else class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div v-else class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4">
         <ProjectCard v-for="(project, index) in projects" :key="index" :project="project"></ProjectCard>
       </div>
     </div>

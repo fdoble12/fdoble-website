@@ -1,11 +1,11 @@
 <template>
-  <div class="bg-white p-4 pb-1 rounded-lg shadow-xl border-2 border-black w-full md:w-auto md:h-auto">
+  <div class="bg-white p-4 pb-1 rounded-lg shadow-xl border-2 border-black flex flex-stretch flex-col">
     <!-- Project Card Content -->
     <div>
       <img
         :src="project.img"
         :alt="project.title"
-        class="w-[360px] h-60 md:w-full md:h-80 object-cover rounded border-2 border-black"
+        class="w-[360px] h-60 md:w-full md:h-60 object-cover rounded border-2 border-black"
       />
     </div>
     <div>
