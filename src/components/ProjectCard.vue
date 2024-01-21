@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white p-4 pb-1 rounded-lg shadow-xl border-2 border-black flex flex-stretch flex-col">
+  <div class="bg-white p-4 pb-1 rounded-lg shadow-xl border-2 border-black flex flex-stretch flex-col hover:opacity-60 hover:shadow-dark hover:transform-hover cursor-pointer" @click="navigateToProject">
     <!-- Project Card Content -->
     <div>
       <img
@@ -58,8 +58,31 @@
           return 'bg-purple-500 text-white rounded-full px-2 py-1 text-xs mt-2';
       }
     },
+    navigateToProject() {
+      // Use window.location or router.push to navigate to the project URL
+      window.open(this.project.url,'_blank')
+      // If you're using a router (e.g., Vue Router), you can use router.push(this.project.url);
+    }
+
   },
       name: 'ProjectCard',
     }
 </script>
+<style scoped>
+.hover {
+  transition: opacity 0.3s, box-shadow 0.3s;
+}
 
+.transform-hover {
+  transition: transform 0.3s;
+}
+
+.hover:hover {
+  opacity: 0.8;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.hover:hover .transform-hover {
+  transform: translateY(-4px);
+}
+</style>
