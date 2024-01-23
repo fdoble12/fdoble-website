@@ -6,6 +6,7 @@ import Projects from './components/Projects.vue';
 import Contact from './components/Contact.vue';
 import TrialExp from './components/TrialExp.vue';
 import Skills from './components/Skills.vue';
+import Cocurriculars from './components/Cocurriculars.vue';
 </script>
 
 <template>
@@ -15,6 +16,7 @@ import Skills from './components/Skills.vue';
     <About/>
     <Skills/>
     <TrialExp/>
+    <Cocurriculars/>
     <Projects/>
     <Contact/>
   </div>
