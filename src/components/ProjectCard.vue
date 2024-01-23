@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white p-4 pb-1 rounded-lg shadow-xl border-2 border-black flex flex-stretch flex-col hover:opacity-60 hover:shadow-dark hover:transform-hover cursor-pointer" @click="navigateToProject">
+  <div class="bg-white p-4 pb-1 rounded-lg shadow-xl border-2 border-gray-600 flex flex-stretch flex-col hover:shadow-dark hover:transform-hover cursor-pointer hover:border-black hover:opacity-80 hover:border-4" @click="navigateToProject">
     <!-- Project Card Content -->
     <div>
       <img
@@ -10,8 +10,8 @@
     </div>
     <div>
       <div class="pt-2">
-      <h3 class="text-lg sm:text-md md:text-xl text-blue-600 underline font-semibold mb-2">
-        <a :href="project.url" class="hover:text-blue-800 sm:text-md">{{ project.title }}</a>
+      <h3 class="text-lg sm:text-md md:text-xl text-blue-600 hover:underline font-semibold mb-2 hover:text-blue-800 sm:text-md">
+        {{ project.title }}
       </h3>
       <p class="text-sm sm:text-xs md:text-base text-gray-700 text-justify">{{ project.description }}</p>
       </div>
