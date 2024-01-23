@@ -88,7 +88,7 @@
             description: "A simple web application that applies sentiment analysis on comments from YouTube videos.",
             img: "/projects/yt-sent.png",
             url: "https://github.com/fdoble12/yt-sentiments-webapp",
-            skills: ["VueJS","Python","Flask","Text Classifier, Machine Learning"]
+            skills: ["VueJS","Python","Flask","Text Classifier","Machine Learning"]
           },
           {
             title: "LashoutMnl",
