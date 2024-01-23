@@ -7,13 +7,16 @@
           <li
             v-for="(experience, index) in experiences"
             :key="index"
-            class="py-2 md:py-4 border-2 border-black"
+            class="py-2 md:py-4 border-2 border-black cursor-pointer"
+            @click="toggleExperience(index)"
           >
-            <div class="flex flex-col sm:flex-row justify-between">
+            <div class="flex flex-col sm:flex-row justify-between cursor-pointer">
               <!-- Left side: Experience details -->
               <div class="lg:mb-4 mx-6 md:mx-10 sm:mb-0 sm:mr-10">
-                <div class="font-bold text-sm md:text-xl">{{ experience.role }}</div>
-                <div class="italic text-sm md:text-lg">{{ experience.company }}</div>
+                <div class="underline-on-hover">
+                  <div class="font-bold text-sm md:text-xl">{{ experience.role }}</div>
+                  <div class="italic text-sm md:text-lg">{{ experience.company }}</div>
+                </div>
                 <div class="text-gray-600 text-xs md:text-base  ">{{ experience.duration }}</div>
                 <!-- Description will show/hidden based on the 'expanded' property -->
                 <div v-if="experience.expanded" class="text-gray-800 mt-2">
@@ -25,7 +28,7 @@
                 </div>
               </div>
               <!-- Right side: Button to toggle description -->
-              <button @click="toggleExperience(index)" class="mx-2 sm:mx-10">
+              <button class="mx-2 sm:mx-10">
                 <!-- Conditional rendering for '+' or 'x' based on the 'expanded' property -->
                 <span v-if="experience.expanded" class="text-2xl font-bold">-</span>
                 <span v-else class="text-2xl font-bold">+</span>
@@ -92,5 +95,7 @@ export default {
 </script>
 
 <style>
-
+.underline-on-hover:hover {
+  text-decoration: underline;
+}
 </style>
