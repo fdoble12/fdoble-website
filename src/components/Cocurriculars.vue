@@ -10,7 +10,7 @@
       >
         <swiper-slide v-for="(experience, index) in experiences" :key="index">
           <div class="bg-white p-4 rounded-lg shadow-md flex flex-col md:flex-row border-2 border-black">
-            <div class="w-full h-full md:pr-4"> 
+            <div class="w-full h-full md:w-3/5 md:h-3/5 md:pr-4"> 
               <img v-bind:src="experience.image">
             </div>
             <div class="md:w-4/5 py-2 md:py-0 px-4">
