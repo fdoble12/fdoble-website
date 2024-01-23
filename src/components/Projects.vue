@@ -91,6 +91,13 @@
             skills: ["VueJS","Python","Flask","Text Classifier","Machine Learning"]
           },
           {
+            title: "Employee Index Dashboard",
+            description: "A simple PowerBI dashboard that visualizes an employee index dataset from Kaggle",
+            img: "/projects/pbi.png",
+            url: "https://app.powerbi.com/view?r=eyJrIjoiYmUzYWVhMzYtOWQzMC00M2QyLWI4ZWYtZjJlMTkxNWU0MTk5IiwidCI6ImYzNGEzNWJkLWE2NWQtNDYwNS1iMGZhLWQyNTcxZjgzMWY1ZSIsImMiOjEwfQ%3D%3D",
+            skills: ["Microsoft PowerBI","Data Analysis & Visualization"]
+          },
+          {
             title: "LashoutMnl",
             description: "This web application handles the booking services of LashOut MNL studio.",
             img: "/projects/lashout.png",
